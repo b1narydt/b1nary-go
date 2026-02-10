@@ -1,17 +1,17 @@
-# @babbage/go
+# @b1nary/go
 
 A production-minded BRC-100 `WalletInterface` wrapper that keeps onboarding, error handling, and funding flows conversion-focused. Babbage Go now ships with an opinionated emotional design system so Metanet apps can feel branded from the very first modal.
 
 ## Quick start
 
 ```bash
-npm i @bsv/sdk @babbage/go
+npm i @bsv/sdk @b1nary/go
 ```
 
 ```ts
-import BabbageGo from '@babbage/go'
+import BabbageGo from '@b1nary/go'
 
-const wallet = new BabbageGo()
+const wallet = new B1NARYGo()
 await wallet.createAction({
   description: 'Launchpad mint',
   outputs: [{
@@ -97,22 +97,7 @@ const wallet = new babbagego(undefined, {
 })
 ```
 
-### 4. Babbage todo-ts Application With SatoshiShopClient Funding Integration
 
-```ts
-const wallet = new babbagego(undefined, {
-  monetization: {
-    developerIdentity: '02a0647.....1149ea1291d1a73783d1b7b3a7a220',
-    developerFeeSats: 300
-  },
-  funding: {
-    title: 'More Satoshis Needed',
-    introText: 'Satoshis are needed perform this action, or you can cancel it.',
-    buySatsText: 'Buy Satoshis',
-    source: 'satoshiShopClient'
-  }
-})
-```
 
 ## License
 
