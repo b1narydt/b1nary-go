@@ -720,7 +720,7 @@ export interface PaymentToken {
 
 // ---------- Wrapper ----------
 
-export default class BabbageGo implements WalletInterface {
+export default class B1NARYGo implements WalletInterface {
   readonly base: WalletInterface;
   readonly options: ResolvedOptions;
   private pendingScripts: Record<string, {
